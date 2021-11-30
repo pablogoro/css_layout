@@ -1,0 +1,42 @@
+ * {
+     box-sizing: border-box;
+     /*inhabilita el padding para evitar el descuadre del layaout*/
+ }
+ 
+ body {
+     margin: 0;
+ }
+ /*clear floats after the columns*/
+ 
+ .row::after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+ /*Diseño de columnas*/
+ /*el -num nos indica el número de columnas que habrá en toda la horizotal*/
+ 
+ .column-1 {
+     width: 100%;
+     float: left;
+     /*nos indica la alineacióin de las cajas*/
+ }
+ 
+ .column-2 {
+     width: 50%;
+     float: left;
+ }
+ 
+ .column-3 {
+     width: 33.33%;
+     float: left;
+ }
+ 
+ .column-4 {
+     width: 25%;
+     float: left;
+ }
+ 
+ @media only screen and (max-width: 600px) {
+     /*reglas*/
+ }
