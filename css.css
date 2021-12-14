@@ -19,24 +19,44 @@
  .column-1 {
      width: 100%;
      float: left;
+     background-color: lightcyan;
      /*nos indica la alineacióin de las cajas*/
  }
  
  .column-2 {
      width: 50%;
      float: left;
+     background-color: cyan;
  }
  
  .column-3 {
      width: 33.33%;
      float: left;
+     background-color: darkcyan;
  }
  
  .column-4 {
      width: 25%;
      float: left;
+     background-color: lightskyblue;
+ }
+ 
+ .column-5 {
+     width: 20%;
+     float: left;
+     background-color: midnightblue;
  }
  
  @media only screen and (max-width: 600px) {
      /*reglas*/
+     /*column-3 pasara de tener 33'3% a 100%*/
+     .column-3 {
+         width: 100%;
+     }
+     .column-4 {
+         width: 50%;
+     }
+     #decima {
+         width: 100%;
+     }
  }
